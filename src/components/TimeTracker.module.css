@@ -1,0 +1,126 @@
+.main {
+  display: grid;
+  grid-template-columns: 16rem 51.4rem;
+  grid-gap: 2rem;
+  height: 510px;
+}
+
+.profile {
+  background: hsl(235, 46%, 20%);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.profileDetails {
+  background: hsl(246, 80%, 60%);
+  border-radius: 16px;
+  padding: 32px 30px;
+}
+
+.profilePhoto {
+  border: 3px solid #fff;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+.profilePhoto img {
+  vertical-align: middle;
+  width: 78px;
+}
+
+.reportText {
+  color: hsl(236, 100%, 87%);
+  margin-top: 40px;
+}
+
+.nameText {
+  color: white;
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 52px;
+}
+
+.profileButtons {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileButtons button {
+  all: unset;
+  color: hsl(236, 100%, 87%);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 0px 30px;
+  margin-top: 22px;
+}
+
+.profileButtons button:hover {
+  color: #fff;
+}
+
+.profileButtons > .active {
+  color: #fff;
+}
+
+.activities {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+/************************ MEDIA QUERY  *************************/
+@media (max-width: 1110px) {
+  .main {
+    height: auto;
+    width: 330px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 100px;
+  }
+
+  .activities {
+    grid-template-columns: 1fr;
+  }
+
+  .profile {
+    height: 210px;
+  }
+
+  .profileDetails {
+    display: flex;
+    align-items: center;
+    padding: 29px 29px;
+  }
+
+  .profilePhoto {
+    display: block;
+  }
+
+  .profilePhoto img {
+    width: 70px;
+  }
+
+  .reportText {
+    margin-top: 0;
+  }
+
+  .profileText {
+    margin-left: 16px;
+  }
+
+  .nameText {
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+
+  .profileButtons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3px;
+  }
+
+  .profileButtons button {
+  }
+}
